@@ -6,3 +6,4 @@ class Comentario:
     def publicar(self):
         # Lógica para publicar o comentário
         print(f"Usuário: {self.usuario}\nTexto: {self.texto}")
+        
