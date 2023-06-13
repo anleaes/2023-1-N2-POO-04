@@ -45,4 +45,3 @@ class Receita:
         self.ingredientes = []
         self.instrucoes = ""
         print("Receita excluída com sucesso!")
-
