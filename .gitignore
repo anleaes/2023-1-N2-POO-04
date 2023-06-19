@@ -1,4 +1,23 @@
 db.sqlite3
 saborify_appgit add */__pycache__/*
-/apps/categories/__pycache__/*
-/apps/categories/migrations/*
+
+/apps/app/__pycache__/*
+/apps/app/migrations/*
+
+/apps/avaliacao/__pycache__/*
+/apps/avaliacao/migrations/*
+
+/apps/categoria/__pycache__/*
+/apps/categoria/migrations/*
+
+/apps/comentario/__pycache__/*
+/apps/comentario/migrations/*
+
+/apps/notificao/__pycache__/*
+/apps/notificao/migrations/*
+
+/apps/receita/__pycache__/*
+/apps/receita/migrations/*
+
+/apps/usuario/__pycache__/*
+/apps/usuario/migrations/*
