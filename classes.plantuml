@@ -1,0 +1,61 @@
+@startuml
+
+class App {
+  + start(): void
+}
+
+class Usuário {
+  - nome: String
+  - email: String
+  - senha: String
+  + registrar(): void
+  + fazerLogin(): void
+  + fazerLogout(): void
+}
+
+class Receita {
+  - título: String
+  - ingredientes: String[]
+  - instruções: String
+  + criar(): void
+  + ler(): void
+  + atualizar(): void
+  + excluir(): void
+}
+
+class Categoria {
+  - nome: String
+  - receitas: Receita[]
+  + adicionarReceita(): void
+  + removerReceita(): void
+}
+
+class Comentário {
+  - usuário: Usuário
+  - texto: String
+  + publicar(): void
+}
+
+class Avaliação {
+  - usuário: Usuário
+  - valor: int
+  + avaliar(): void
+}
+
+class Notificação {
+  - usuário: Usuário
+  - mensagem: String
+  + enviar(): void
+}
+
+App --> Usuário
+App --> Receita
+Usuário --> Categoria
+Usuário --> Comentário
+Usuário --> Avaliação
+Usuário --> Notificação
+Receita --> Categoria
+Receita --> Comentário
+Receita --> Avaliação
+
+@enduml
